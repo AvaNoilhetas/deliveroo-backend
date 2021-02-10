@@ -3,12 +3,8 @@ const cors = require("cors");
 const app = express();
 require("dotenv").config();
 
-let corsOptions = {
-  origin: process.env.FRONT_WEB_SITE
-};
-
 app.disable("x-powered-by");
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.get("/", (req, res) => {
   return res.status(200).json({
