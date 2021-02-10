@@ -1,11 +1,16 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+require("dotenv").config();
 
-app.use(cors());
+let corsOptions = {
+  origin: process.env.FRONT_WEB_SITE
+};
+
+app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
-  return res.json({
+  return res.status(200).json({
     restaurant: {
       path: "Le Pain Quotidien",
       name: "Le Pain Quotidien - Montorgueil",
@@ -451,6 +456,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 3200, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server started");
 });
