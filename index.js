@@ -7,6 +7,7 @@ let corsOptions = {
   origin: process.env.FRONT_WEB_SITE
 };
 
+app.disable("x-powered-by");
 app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
