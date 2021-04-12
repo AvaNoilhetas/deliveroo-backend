@@ -1,6 +1,6 @@
-# DELIVEROO BACK END API 🍔🍟🍕🧁🍩
+<h1 align="center">DELIVEROO BACK END API 🍔🍟🍕🧁🍩</h1>
 
-[See the API](https://deliveroooooooo-backend.herokuapp.com)
+<p align="center"><a href="https://deliveroooooooo-backend.herokuapp.com">See the API</a></p>
 
 ## Installation
 
